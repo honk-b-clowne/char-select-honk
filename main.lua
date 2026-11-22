@@ -37,35 +37,35 @@ local TEX_HONK_LIFE_ICON = get_texture_info("Honk64-life-icon-32p") -- Located i
 -- All sound files are located in "sound" folder
 local VOICETABLE_HONK = {
     [CHAR_SOUND_OKEY_DOKEY] =        'CharStartGame.ogg', -- Starting game
-	[CHAR_SOUND_LETS_A_GO] =         'honk_herewego.ogg', -- Starting level
+	[CHAR_SOUND_LETS_A_GO] =         'honk_burp.ogg', -- Starting level
 	[CHAR_SOUND_GAME_OVER] =         'honk_gameover.ogg', -- Game Overed
-	[CHAR_SOUND_PUNCH_YAH] =         'CharPunch1.ogg', -- Punch 1
-	[CHAR_SOUND_PUNCH_WAH] =         'CharPunch2.ogg', -- Punch 2
-	[CHAR_SOUND_PUNCH_HOO] =         'CharPunch3.ogg', -- Punch 3
-	[CHAR_SOUND_YAH_WAH_HOO] =       {'honk_ay.ogg', 'honk_chu.ogg', 'honk_hoo.ogg'}, -- First Jump Sounds
-	[CHAR_SOUND_HOOHOO] =            'CharDoubleJump.ogg', -- Second jump sound
-	[CHAR_SOUND_YAHOO_WAHA_YIPPEE] = {'CharTripleJump1.ogg', 'CharTripleJump2.ogg'}, -- Triple jump sounds
-	[CHAR_SOUND_UH] =                'CharBonk.ogg', -- Soft wall bonk
+	[CHAR_SOUND_PUNCH_YAH] =         {'honk_dash1.ogg', 'honk_dash2.ogg', 'honk_dash3.ogg'}, -- Punch 1
+	[CHAR_SOUND_PUNCH_WAH] =         {'honk_dash1.ogg', 'honk_dash2.ogg', 'honk_dash3.ogg'}, -- Punch 2
+	[CHAR_SOUND_PUNCH_HOO] =         {'honk_dash1.ogg', 'honk_dash2.ogg', 'honk_dash3.ogg'}, -- Punch 3
+	[CHAR_SOUND_YAH_WAH_HOO] =       {'honk_ay.ogg', 'honk_chu.ogg', 'honk_bup.ogg'}, -- First Jump Sounds
+	[CHAR_SOUND_HOOHOO] =            'toad_hoo.ogg', -- Second jump sound
+	[CHAR_SOUND_YAHOO_WAHA_YIPPEE] = 'toad_yeahhaha.ogg', -- Triple jump sounds
+	[CHAR_SOUND_UH] =                'honk_crash1.ogg', -- Soft wall bonk
 	[CHAR_SOUND_UH2] =               'honk_jeez.ogg', -- Quick ledge get up
 	[CHAR_SOUND_UH2_2] =             'CharLongJumpLand.ogg', -- Landing after long jump
-	[CHAR_SOUND_DOH] =               'CharBonk.ogg', -- Hard wall bonk
+	[CHAR_SOUND_DOH] =               'honk_crash2.ogg', -- Hard wall bonk
 	[CHAR_SOUND_OOOF] =              'honk_wtf.ogg', -- Attacked in air
 	[CHAR_SOUND_OOOF2] =             'honk_myback.ogg', -- Land from hard bonk
 	[CHAR_SOUND_HAHA] =              'honk_landing.ogg', -- Landing triple jump
 	[CHAR_SOUND_HAHA_2] =            'CharWaterLanding.ogg', -- Landing in water from big fall
-	[CHAR_SOUND_YAHOO] =             'CharLongJump.ogg', -- Long jump
+	[CHAR_SOUND_YAHOO] =             {'toad_hoo.ogg', 'toad_yeahhaha.ogg'}, -- Long jump
 	[CHAR_SOUND_DOH] =               'CharBonk.ogg', -- Long jump wall bonk
 	[CHAR_SOUND_WHOA] =              'honk_ohmygod.ogg', -- Grabbing ledge
-	[CHAR_SOUND_EEUH] =              'CharClimbLedge.ogg', -- Climbing over ledge
+	[CHAR_SOUND_EEUH] =              'honk_climb.ogg', -- Climbing over ledge
 	[CHAR_SOUND_WAAAOOOW] =          'Screams_Male_03.ogg', -- Falling a long distance
-	[CHAR_SOUND_TWIRL_BOUNCE] =      'CharFlowerBounce.ogg', -- Bouncing off of a flower spring
+	[CHAR_SOUND_TWIRL_BOUNCE] =      {'honk_spin1.ogg', 'honk_spin2.ogg', 'honk_spin3.ogg'}, -- Bouncing off of a flower spring
 	[CHAR_SOUND_GROUND_POUND_WAH] =  'CharGroundPound.ogg', -- Ground Pound after startup
-	[CHAR_SOUND_WAH2] =              'CharThrow.ogg', -- Throwing something
+	[CHAR_SOUND_WAH2] =              'honk_morning.ogg', -- Throwing something
 	[CHAR_SOUND_HRMM] =              'honk_myshoulder.ogg', -- Lifting something
 	[CHAR_SOUND_HERE_WE_GO] =        'honk_okay.ogg', -- Star get
 	[CHAR_SOUND_SO_LONGA_BOWSER] =   'honk_sorry.ogg', -- Throwing Bowser
 --DAMAGE
-	[CHAR_SOUND_ATTACKED] =          'CharDamaged.ogg', -- Damaged
+	[CHAR_SOUND_ATTACKED] =          {'honk_wtf.ogg', 'honk_problem.ogg', 'honk_due.ogg'}, -- Damaged
 	[CHAR_SOUND_PANTING] =           'honk_ow.ogg', -- Low health
 	[CHAR_SOUND_PANTING_COLD] =      'honk_phew.ogg', -- Getting cold
 	[CHAR_SOUND_ON_FIRE] =           'CharBurned.ogg', -- Burned
@@ -76,13 +76,13 @@ local VOICETABLE_HONK = {
 	[CHAR_SOUND_SNORING2] =          'CharExhale.ogg', -- Exhale
 	[CHAR_SOUND_SNORING3] =          'honk_sleeptalk.ogg', -- Sleep talking / mumbling
 --COUGHING (USED IN THE GAS MAZE)
-	[CHAR_SOUND_COUGHING1] =         'CharCough1.ogg', -- Cough take 1
-	[CHAR_SOUND_COUGHING2] =         'CharCough2.ogg', -- Cough take 2
-	[CHAR_SOUND_COUGHING3] =         'CharCough3.ogg', -- Cough take 3
+	[CHAR_SOUND_COUGHING1] =         'honk_laugh1.ogg', -- Cough take 1
+	[CHAR_SOUND_COUGHING2] =         'honk_laugh2.ogg', -- Cough take 2
+	[CHAR_SOUND_COUGHING3] =         'honk_laugh3.ogg', -- Cough take 3
 --DEATH
 	[CHAR_SOUND_DYING] =             'honk_thathurts.ogg', -- Dying from damage
 	[CHAR_SOUND_DROWNING] =          'CharDrowning.ogg', -- Running out of air underwater
-	[CHAR_SOUND_MAMA_MIA] =          'honk_morning.ogg' -- Booted out of level
+	[CHAR_SOUND_MAMA_MIA] =          'honk_real.ogg' -- Booted out of level
 }
 
 _G.charSelect.character_add_voice(E_MODEL_HONK, VOICETABLE_HONK)
@@ -100,7 +100,7 @@ local CAPTABLE_CHAR = {
 local PALETTE_HONK = {
     [PANTS]  = "252525",
     [SHIRT]  = "ffffff",
-    [GLOVES] = "ffffff",
+    [GLOVES] = "00baff",
     [SHOES]  = "ffffff",
     [HAIR]   = "ffffff",
     [SKIN]   = "fdfd69",
@@ -110,7 +110,7 @@ local PALETTE_HONK = {
 local PALETTE_HONK_CLASSIC = {
     [PANTS]  = "252525",
     [SHIRT]  = "ffffff",
-    [GLOVES] = "ffffff",
+    [GLOVES] = "fd00cc",
     [SHOES]  = "ffffff",
     [HAIR]   = "ffffff",
     [SKIN]   = "fdfd69",
@@ -120,27 +120,27 @@ local PALETTE_HONK_CLASSIC = {
 local PALETTE_HONK_HENGUS = {
     [PANTS]  = "087093",
     [SHIRT]  = "00ffad",
-    [GLOVES] = "ffffff",
+    [GLOVES] = "252525",
     [SHOES]  = "ffffff",
     [HAIR]   = "ffffff",
     [SKIN]   = "09baf5",
-    [CAP]    = "252525",
+    [CAP]    = "c59040",
 	[EMBLEM] = "252525"
 }
 local PALETTE_HONK_GAMI = {
     [PANTS]  = "c24445",
     [SHIRT]  = "c24445",
-    [GLOVES] = "ffffff",
+    [GLOVES] = "39191a",
     [SHOES]  = "ffffff",
     [HAIR]   = "ffffff",
     [SKIN]   = "6d4635",
-    [CAP]    = "2a2a30",
+    [CAP]    = "d7663a",
 	[EMBLEM] = "39191a"
 }
 local PALETTE_HONK_SQUISHY = {
-    [PANTS]  = "121331",
+    [PANTS]  = "2a2a30",
     [SHIRT]  = "d5c600",
-    [GLOVES] = "ffffff",
+    [GLOVES] = "121331",
     [SHOES]  = "ffffff",
     [HAIR]   = "ffffff",
     [SKIN]   = "3d2121",
@@ -150,7 +150,7 @@ local PALETTE_HONK_SQUISHY = {
 local PALETTE_HONK_GREEN = {
     [PANTS]  = "062200",
     [SHIRT]  = "38b114",
-    [GLOVES] = "ffffff",
+    [GLOVES] = "38b114",
     [SHOES]  = "ffffff",
     [HAIR]   = "ffffff",
     [SKIN]   = "68d343",
@@ -216,7 +216,7 @@ local function on_character_select_load()
 
     _G.charSelect.character_add_palette_preset(E_MODEL_HONK, PALETTE_HONK_HENGUS, "blue man! ahh!!!")
 
-    _G.charSelect.character_add_palette_preset(E_MODEL_HONK, PALETTE_HONK_GAMI, "funtime")
+    _G.charSelect.character_add_palette_preset(E_MODEL_HONK, PALETTE_HONK_GAMI, "the titular")
 
     _G.charSelect.character_add_palette_preset(E_MODEL_HONK, PALETTE_HONK_SQUISHY, "some kind of... better coin")
 
