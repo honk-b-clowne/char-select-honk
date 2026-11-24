@@ -117,6 +117,16 @@ local PALETTE_HONK_CLASSIC = {
     [CAP]    = "fd00cc",
 	[EMBLEM] = "00baff"
 }
+local PALETTE_HONK_RETRO = {
+    [PANTS]  = "000000",
+    [SHIRT]  = "ffffff",
+    [GLOVES] = "5182ff",
+    [SHOES]  = "ffffff",
+    [HAIR]   = "ffffff",
+    [SKIN]   = "cbd320",
+    [CAP]    = "5182ff",
+	[EMBLEM] = "db41c3"
+}
 local PALETTE_HONK_HENGUS = {
     [PANTS]  = "087093",
     [SHIRT]  = "00ffad",
@@ -213,6 +223,8 @@ local function on_character_select_load()
     _G.charSelect.character_add_palette_preset(E_MODEL_HONK, PALETTE_HONK, "the silly")
 
     _G.charSelect.character_add_palette_preset(E_MODEL_HONK, PALETTE_HONK_CLASSIC, "old")
+
+    _G.charSelect.character_add_palette_preset(E_MODEL_HONK, PALETTE_HONK_RETRO, "older")
 
     _G.charSelect.character_add_palette_preset(E_MODEL_HONK, PALETTE_HONK_HENGUS, "blue man! ahh!!!")
 
